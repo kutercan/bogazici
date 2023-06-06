@@ -112,10 +112,10 @@ body {
 
 #hero {
   background-image: url(./img/banner.jpg);
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   background-position: top 25% right 0;
-  background-size: cover;
+  background-size: contain;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -153,6 +153,10 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+}
+
+#hero button:hover {
+  scale: 1.1;
 }
 
 #hero button a {
@@ -217,7 +221,7 @@ body {
 }
 
 #product1 .pro .cart {
-  width: 40px;
+  width: 70px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
@@ -226,7 +230,7 @@ body {
   color: #088178;
   border: 1px solid #cce7d0;
   position: absolute;
-  bottom: 20px;
+  bottom: 0.1px;
   right: 10px;
 }
 
@@ -448,6 +452,15 @@ footer h4 {
   background-color: #088178;
   color: #fff;
   padding: 12px 20px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: start; /* Change to 'center' if you want the items to be vertically aligned in the center. */
+}
+
+.contact-details img {
+  margin-right: 20px; /* Adjust the value to increase/decrease the space between the image and the text. */
 }
 
 /* Start Media Query */
