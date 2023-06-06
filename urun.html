@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bosphorus Store</title>
+    <script
+      src="https://kit.fontawesome.com/d0bad20f39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="./index.html">
+        <img
+          src="./img/mobile_menu_tmok_b_logo_tr.png"
+          alt="tmok logo"
+          id="logo"
+        />
+      </a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="./index.html">Anasayfa</a></li>
+          <li><a class="active" href="./urunler">Ürünler</a></li>
+          <li><a href="./iletisim">İletişim</a></li>
+          <li id="lg-bag">
+            <a href="./cart.html"
+              ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <a href="./cart.html"
+          ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"> </i>
+      </div>
+    </div>
+
+    <div id="urundetay" class="section-p1">
+      <div class="single-pro-image">
+        <img
+          src="./img/Urunler/BeyazTisortOn.png"
+          width="100%"
+          id="MainImg"
+          alt="Beyaz Tişört"
+        />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="./img/Urunler/BeyazTisortArka.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="./img/Urunler/BeyazTisort.jpeg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="./img/Urunler/BeyazTisortOn.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="./img/Urunler/BeyazTisortArka.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-details">
+        <h6>Tişört</h6>
+        <h4>Beyaz Tişört</h4>
+        <h2>500 TL</h2>
+        <select>
+          <option>Beden Seçiniz</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>X-Large</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal">Sepete Ekle</button>
+        <h4>Ürün Detayları</h4>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          totam saepe reprehenderit odit quos qui inventore minima laboriosam
+          deleniti quod id dolorem, ad laudantium fugit fuga accusamus earum
+          aliquam numquam temporibus. Eveniet omnis impedit veritatis officiis,
+          ad, debitis voluptas alias quidem porro voluptatum voluptatem sapiente
+          ipsa numquam hic, rem nemo? Similique consequatur veritatis temporibus
+          voluptatibus, optio, ea architecto sed aliquam eum expedita
+          aspernatur! Porro ex ipsam nulla tempore deserunt laboriosam nostrum
+          molestias suscipit, temporibus accusantium neque assumenda. Id animi
+          fugiat officia inventore delectus quia sint voluptatum aliquid
+          aperiam? Eveniet in quas eos architecto deleniti eaque doloremque quo.
+          Tempore accusamus autem ipsum impedit qui est delectus dolore
+          consectetur sequi molestias quia maxime cupiditate officiis quasi non
+          neque fugit explicabo modi esse nihil illum, cum, optio accusantium.
+          Corporis laboriosam qui, ex voluptatem earum tempore. Optio harum
+          iste, eius error totam assumenda possimus porro, velit aliquam sed
+          soluta, nihil perspiciatis ullam ratione unde.</span
+        >
+      </div>
+    </div>
+
+    <footer class="section-p1">
+      <div class="footer">
+        <div class="col footerlogo">
+          <img src="./img/mobile_menu_tmok_b_logo_tr.png" id="footerlogo" />
+        </div>
+        <div class="col">
+          <h4>İletişim</h4>
+          <p>
+            <strong>Adres:</strong> Zuhuratbaba Mah. Dr. Remzi Kazancıgil Cad.
+            <br />
+            Olimpiyatevi No:34/1 <br />
+            Bakırköy/İSTANBUL
+          </p>
+          <p><strong>Telefon:</strong> +90 212 560 07 07</p>
+          <p><strong>Faks:</strong> +90 212 560 00 55</p>
+          <p><strong>E posta:</strong> bogazici@olimpiyat.org.tr</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>2023 | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var smallimg = document.getElementsByClassName("small-img");
+
+      smallimg[0].onclick = function name() {
+        MainImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function name() {
+        MainImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function name() {
+        MainImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function name() {
+        MainImg.src = smallimg[3].src;
+      };
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
